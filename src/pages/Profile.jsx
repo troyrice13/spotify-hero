@@ -9,19 +9,25 @@ export default function Profile() {
 
     useEffect(() => {
         const fetchData = async () => {
-            try {
-                const userData = getUserData();
-                setUser(userData.data)
-
-                const recentlyPlayed = getRecentlyPlayedTracks();
-                setTracks((await recentlyPlayed).data.items);
-            } catch (err) {
-                console.error(err)
+          try {
+            const accessToken = localStorage.getItem('spotify_access_token');
+    
+            if (!accessToken) {
+              throw new Error('No access token found');
             }
+    
+            const userData = await getUserData();
+            setUser(userData.data);
+    
+            const recentlyPlayed = await getRecentlyPlayedTracks();
+            setTracks(recentlyPlayed.data.items);
+          } catch (error) {
+            console.error('Error fetching data:', error);
+          }
         };
-
+    
         fetchData();
-    }, [])
+      }, []);
 
         return (
             <div className="profile-container">
