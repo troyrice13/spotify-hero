@@ -3,20 +3,30 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 75vh;
+    height: 100vh;
 }
 
 .profile-title {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-size: 2.5rem;
-
+    color: white;
 }
 
 .profile-subheader {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: white;
 }
 
 .profile-track-items {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.profile-track-list {
+    background-color: #282828;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
 }

@@ -35,11 +35,11 @@ export default function Profile() {
                     <>
                         <h1 className="profile-title">Welcome, {user.display_name}!</h1>
                         <h2 className="profile-subheader">Recently Played Tracks:</h2>
-                        <ul>
+                        <ul className="profile-track-list">
                             {tracks.map(track => (
-                                <li className="profile-track-items" key={track.track.id}>
+                                <ul className="profile-track-items" key={track.track.id}>
                                     {track.track.name} by {track.track.artists[0].name}
-                                </li>
+                                </ul>
                             ))}
                         </ul>
                     </>
