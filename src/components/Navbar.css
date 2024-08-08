@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1db954;
+    color: white;
+}
+
+.navbar-logo {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.navbar-links {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+

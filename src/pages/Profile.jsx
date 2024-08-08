@@ -33,11 +33,11 @@ export default function Profile() {
             <div className="profile-container">
                 {user ? (
                     <>
-                        <h1>Welcome {user.display_name}</h1>
-                        <h2>Recently Played Tracks:</h2>
+                        <h1 className="profile-title">Welcome, {user.display_name}!</h1>
+                        <h2 className="profile-subheader">Recently Played Tracks:</h2>
                         <ul>
                             {tracks.map(track => (
-                                <li key={track.track.id}>
+                                <li className="profile-track-items" key={track.track.id}>
                                     {track.track.name} by {track.track.artists[0].name}
                                 </li>
                             ))}
