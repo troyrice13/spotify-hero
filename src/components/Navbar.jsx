@@ -6,7 +6,9 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <Link to='/'>Spotify Hero</Link>
+                <Link to='/'>
+                    <img src="/discplayer.png" alt="Spotify Hero Logo" className="logo-image" />
+                </Link>
             </div>
             <div className="navbar-links">
                 <Link to="/">Home</Link>

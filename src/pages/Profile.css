@@ -3,30 +3,37 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 90vh;
 }
 
 .profile-title {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-size: 2.5rem;
     color: white;
+    margin-bottom: 20px;
 }
 
 .profile-subheader {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     color: white;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
 .profile-track-items {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    margin-bottom: 10px;
+    margin: 5px 0;
     color: white;
-    font-weight: 500;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .profile-track-list {
-    background-color: #282828;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-align: center;
+    background-color: rgba(40, 40, 40, 0.9); /* Semi-transparent dark gray */
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    border: 1px solid #333; /* Subtle border to distinguish from background */
+    color: white; /* Ensures text stands out on the darker background */
 }
