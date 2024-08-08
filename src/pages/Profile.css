@@ -37,3 +37,8 @@
     border: 1px solid #333; /* Subtle border to distinguish from background */
     color: white; /* Ensures text stands out on the darker background */
 }
+
+.current-track {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: #1db954
+}
