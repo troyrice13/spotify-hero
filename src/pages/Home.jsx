@@ -1,5 +1,5 @@
-import React from "react";
-import './Home.css'
+import React, { useState, useEffect } from "react";
+import './Home.css';
 
 export default function Home() {
     const handleLogin = () => {

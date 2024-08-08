@@ -1,11 +1,12 @@
 import React, {useEffect} from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import './Callback.css'
 
 export default function Callback() {
     const [searchParams] = useSearchParams();
     const code = searchParams.get('code');
+    const navigate = useNavigate()
 
     useEffect(() => {
         if (code) {
@@ -20,7 +21,7 @@ export default function Callback() {
                 .then (res => {
                     const { access_token } = res.data;
                     localStorage.setItem('spotify_access_token', access_token);
-                    // window.location = '/'
+                    navigate('/profile')
                 })
                 .catch(err => {
                     console.error(err)
