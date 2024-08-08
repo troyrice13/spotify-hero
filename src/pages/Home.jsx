@@ -11,9 +11,9 @@ export default function Home() {
     }
 
     return (
-        <div>
-            <h1>Home</h1>
-            <button onClick={handleLogin}>Login to Spotify</button>
+        <div className="home-container">
+            <h1 className="home-title">Welcome to Jam Sesh</h1>
+            <button className="home-button" onClick={handleLogin}>Login to Spotify</button>
         </div>
     )
 }

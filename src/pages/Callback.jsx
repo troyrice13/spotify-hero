@@ -1,7 +1,10 @@
 import React from "react";
+import './Callback.css'
 
 export default function Callback() {
     return (
-        <h1>Callback</h1>
+        <div className="callback-container">
+            <h1 className="callback-title">Callback</h1>
+        </div>
     )
 }
