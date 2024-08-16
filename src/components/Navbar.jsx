@@ -13,6 +13,7 @@ export default function Navbar() {
             <div className="navbar-links">
                 <Link to="/">Home</Link>
                 <Link to="/profile">Profile</Link>
+                <Link to="/game">Game</Link>
             </div>
         </nav>
     )
