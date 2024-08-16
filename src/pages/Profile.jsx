@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './Profile.css';
 import { getUserData, getRecentlyPlayedTracks } from "../services/spotify";
+import PlaybackControls from "../components/PlaybackControls";
 
 export default function Profile() {
     const [user, setUser] = useState(null);
@@ -142,11 +143,7 @@ export default function Profile() {
                             </li>
                         ))}
                     </ul>
-                    {currentTrack && (
-                        <div>
-                            <h3 className="current-track">Now Playing: {currentTrack.name} by {currentTrack.artists[0].name}</h3>
-                        </div>
-                    )}
+                    <PlaybackControls player={player} currentTrack={currentTrack} />
                 </>
             ) : (
                 <p>Loading...</p>
